@@ -1,0 +1,13 @@
+a=float(input("Enter value of a:"))
+b=float(input("Enter value of b:"))
+c=float(input("Enter value of c:"))
+d=b*b-4*a*c
+if d<0:
+    print("no real roots")
+elif d==0:
+    r1 = r2 = -b/(2*a)
+    print("equal and real roots",r1,r2)
+else:
+    r1=(-b + d**0.5)/(2*a)
+    r2=(-b + d**0.5)/(2*a)
+    print("equal and unreal roots",round(r1,2),round(r2,2)) 
